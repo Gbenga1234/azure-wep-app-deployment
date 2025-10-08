@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remote IT Consulting | Cloud, Security, and Modernization</title>
+  <meta name="description" content="Remote IT consulting specializing in Azure cloud, security, and app modernization. Fixed-scope packages and on-demand advisory.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/logo.svg" as="image">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Remote IT Consulting home">
+      <img src="assets/logo.svg" alt="Company logo" width="36" height="36">
+      <span>Remote IT Consulting</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a class="btn primary" href="#contact">Contact</a></li>
+        <li><button id="themeToggle" class="btn ghost" aria-label="Toggle theme">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Make Azure your competitive advantage</h1>
+        <p>We help teams design, secure, and operate on Azure—fast. From first workload to enterprise scale, we reduce risk and accelerate delivery.</p>
+        <div class="cta-group">
+          <a class="btn primary" href="#contact">Book a free consult</a>
+          <a class="btn" href="#packages">View packages</a>
+        </div>
+        <p class="trust">Trusted across fintech, SaaS, and public sector.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Services</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Azure Landing Zones</h3>
+          <p>Design subscription strategy, governance, networking, and identity with enterprise guardrails.</p>
+          <ul>
+            <li>Hub-spoke network, private endpoints</li>
+            <li>RBAC, PIM, Conditional Access</li>
+            <li>Policy, Blueprints, Bicep/Terraform</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>App Modernization</h3>
+          <p>Migrate to PaaS: App Service, AKS, Functions, managed databases, and messaging.</p>
+          <ul>
+            <li>12-factor readiness</li>
+            <li>Observability: App Insights, Log Analytics</li>
+            <li>Zero-downtime cutovers</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Security & Compliance</h3>
+          <p>Protect data and workloads with defense-in-depth and continuous compliance.</p>
+          <ul>
+            <li>Defender for Cloud, Sentinel SIEM</li>
+            <li>Key Vault, CMK, double encryption</li>
+            <li>Threat modeling and pentest prep</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="packages" class="section alt">
+      <h2>Fixed-scope packages</h2>
+      <div class="pricing">
+        <article class="price-card">
+          <h3>Azure Readiness</h3>
+          <p class="price">$4,900</p>
+          <ul>
+            <li>Architecture review (3 hrs)</li>
+            <li>Security baseline checklist</li>
+            <li>Roadmap and quick wins</li>
+          </ul>
+          <a class="btn primary" href="#contact">Get started</a>
+        </article>
+        <article class="price-card featured">
+          <h3>Landing Zone Sprint</h3>
+          <p class="price">$14,900</p>
+          <ul>
+            <li>Foundational LZ deploy</li>
+            <li>Networking and identity</li>
+            <li>Policy & guardrails</li>
+          </ul>
+          <a class="btn primary" href="#contact">Book sprint</a>
+        </article>
+        <article class="price-card">
+          <h3>App Service Launch</h3>
+          <p class="price">$9,900</p>
+          <ul>
+            <li>CI/CD pipeline</li>
+            <li>Observability setup</li>
+            <li>Production hardening</li>
+          </ul>
+          <a class="btn primary" href="#contact">Launch now</a>
+        </article>
+      </div>
+      <p class="note">Custom engagements available. Contact us for an estimate.</p>
+    </section>
+
+    <section id="approach" class="section">
+      <h2>Our approach</h2>
+      <ol class="steps">
+        <li>Discover: goals, risks, constraints</li>
+        <li>Design: reference architecture and plan</li>
+        <li>Deliver: iterative builds with demos</li>
+        <li>Operate: handover, docs, and enablement</li>
+      </ol>
+    </section>
+
+    <section id="about" class="section alt">
+      <h2>About</h2>
+      <p>We are a senior-led boutique with experience across Fortune 500 and startups. We ship pragmatic solutions, not slide decks.</p>
+      <div class="badges">
+        <span>Microsoft Partner</span>
+        <span>AZ-305, AZ-500, SC-100</span>
+        <span>Azure Well-Architected</span>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Do you work remotely?</summary>
+        <p>Yes, fully remote with optional on-site for key milestones.</p>
+      </details>
+      <details>
+        <summary>Do you support multi-cloud?</summary>
+        <p>Primary focus is Azure; we integrate with AWS/GCP where needed.</p>
+      </details>
+      <details>
+        <summary>What are your billing terms?</summary>
+        <p>Fixed-scope packages or monthly retainers with transparent SOWs.</p>
+      </details>
+    </section>
+
+    <section id="contact" class="section alt">
+      <h2>Contact</h2>
+      <form class="contact" action="https://formspree.io/f/mknlnrwa" method="POST">
+        <div class="grid">
+          <label>
+            <span>Name</span>
+            <input name="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required>
+          </label>
+        </div>
+        <label>
+          <span>How can we help?</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="btn primary" type="submit">Send</button>
+        <p class="privacy">By submitting, you agree to our processing of your info as described in our privacy notice.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Remote IT Consulting. All rights reserved.</p>
+    <a href="#home" class="back-to-top">Back to top ↑</a>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
+
+

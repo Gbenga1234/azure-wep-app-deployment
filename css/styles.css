@@ -1,0 +1,95 @@
+:root{
+  --bg:#0b1020;
+  --panel:#121832;
+  --text:#e6e9f5;
+  --muted:#b7bed6;
+  --brand:#5b8cff;
+  --accent:#22c55e;
+  --border:#24304f;
+  --shadow:0 10px 30px rgba(0,0,0,.25);
+}
+:root.light{
+  --bg:#f7f8fc;
+  --panel:#ffffff;
+  --text:#0e1320;
+  --muted:#3b4256;
+  --brand:#335dff;
+  --accent:#16a34a;
+  --border:#e5e7ef;
+  --shadow:0 10px 30px rgba(16,24,40,.10);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  color:var(--text);
+  background:radial-gradient(1000px 600px at 10% -10%,rgba(91,140,255,.15),transparent 50%),
+             radial-gradient(800px 400px at 100% 0,rgba(34,197,94,.12),transparent 60%),
+             var(--bg);
+  line-height:1.6;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+.site-header{
+  position:sticky;top:0;z-index:50;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 20px;background:rgba(11,16,32,.6);backdrop-filter:saturate(1.2) blur(10px);
+  border-bottom:1px solid var(--border);
+}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700}
+.site-nav .nav-toggle{display:none}
+.nav-menu{display:flex;gap:14px;align-items:center;list-style:none;margin:0;padding:0}
+
+.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);padding:10px 14px;border-radius:10px;transition:.2s;background:transparent;color:var(--text)}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:linear-gradient(135deg,var(--brand),#7aa2ff);color:white;border:none;box-shadow:var(--shadow)}
+.btn.ghost{background:transparent}
+
+.hero{padding:80px 20px}
+.hero-content{max-width:900px;margin:0 auto;text-align:center}
+.hero h1{font-size:clamp(28px,4vw,44px);line-height:1.15;margin:0 0 10px}
+.hero p{color:var(--muted);margin:0 auto 18px;max-width:760px}
+.cta-group{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:6px}
+.trust{font-size:14px;color:var(--muted)}
+
+.section{padding:56px 20px}
+.section.alt{background:var(--panel);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.section h2{font-size:24px;margin:0 0 18px;text-align:center}
+
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-width:1100px;margin:0 auto}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:16px;box-shadow:var(--shadow)}
+.card h3{margin:6px 0 8px}
+.card ul{margin:0;padding-left:18px;color:var(--muted)}
+
+.pricing{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-width:1000px;margin:0 auto}
+.price-card{background:linear-gradient(180deg,rgba(51,93,255,.10),transparent 50%),var(--panel);border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:var(--shadow);text-align:center}
+.price-card.featured{outline:2px solid var(--brand)}
+.price{font-size:28px;font-weight:800;margin:8px 0 14px}
+.note{text-align:center;color:var(--muted)}
+
+.steps{max-width:800px;margin:0 auto;padding-left:18px}
+.badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.badges span{border:1px dashed var(--border);padding:8px 10px;border-radius:999px;color:var(--muted)}
+
+details{max-width:800px;margin:0 auto 10px;border:1px solid var(--border);border-radius:10px;background:var(--panel);padding:10px}
+summary{cursor:pointer;font-weight:600}
+
+.contact{max-width:800px;margin:0 auto}
+.contact .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{display:grid;gap:6px}
+input,textarea{width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:10px;background:transparent;color:var(--text)}
+.privacy{font-size:12px;color:var(--muted)}
+
+.site-footer{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:20px;border-top:1px solid var(--border);color:var(--muted)}
+.back-to-top{font-size:14px}
+
+@media (max-width: 900px){
+  .cards,.pricing{grid-template-columns:1fr}
+  .site-nav .nav-toggle{display:inline-flex}
+  .nav-menu{display:none;position:absolute;right:10px;top:56px;background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:12px;flex-direction:column;min-width:220px}
+  .nav-menu.open{display:flex}
+}
+
+
